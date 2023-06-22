@@ -8,7 +8,7 @@ def Game():
     for i in range(8):
         var = ["Snake", "Water", "Gun"]
         computer = random.choice(var)
-        x = input("your turn:")
+        x = input("your turn: ")
         if (x == "snake" or x == "Snake") and computer == "Water":
             user += 1
         elif (x == "snake" or x == "Snake") and computer == "Gun":
@@ -32,7 +32,7 @@ def Game():
         print("if you want to play again, then press 1 otherwise 0")
         again = int(input())
         while (again == 1):
-            print("Give your inputs as Snake or snake and so on as you wish and play .")
+            print("Give your inputs as Snake or snake and so on as you wish and play.")
             Game()
             print("if you want to play again, then press 1 otherwise 0")
             again = int(input())
